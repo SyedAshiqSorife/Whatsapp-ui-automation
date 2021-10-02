@@ -17,17 +17,19 @@ python -m unittest Tests.testcases.WhatsappTest.test_three
 python -m unittest Tests.testcases.WhatsappTest.test_five
 
 # Usage
- I use Page Object Model for organize the project in a order
- use Python Selenium and Chrome webdriver
- Use openpyxl package for accessing excel file
- Use Unittest for testing
- Use HtmlTestRunner for generate test reports
+ * I use Page Object Model for organize the project in a order
+ * use Python Selenium and Chrome webdriver
+ * Use openpyxl package for accessing excel file
+ * Use Unittest for testing
+ * Use HtmlTestRunner for generate test reports
 
 # Issues 
  ## Please run again if first time get error. There have some path issues
  I could not complete test four because i was not able to access the last msg path,
  it changed everytime so i could not get the right result, thats why there is no implement of test four. But i tried
+   
    ###
+   
    messages = list()
     soup = BeautifulSoup(driver.page_source, "html.parser")
     for i in soup.find_all("div", class_="_2wUmf message-out focusable-list-item"):
@@ -41,7 +43,9 @@ python -m unittest Tests.testcases.WhatsappTest.test_five
     messages_len = len(messages)
     last_msg = messages[messages_len-1]
     print(last_msg)
+    
     ###
+    
  In the above code i can access the last message sent by a user but can't get the 'path' or 'aria-level' value
  
 # Difficulties face
