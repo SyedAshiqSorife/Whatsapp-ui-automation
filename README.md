@@ -31,17 +31,29 @@ python -m unittest Tests.testcases.WhatsappTest.test_five
    ###
    
    messages = list()
+   
     soup = BeautifulSoup(driver.page_source, "html.parser")
+    
     for i in soup.find_all("div", class_="_2wUmf message-out focusable-list-item"):
+    
         print("div[i]")
+        
         message = i.find("span", class_="selectable-text")
+        
         if message:
+        
             message2 = message.find("span")
+            
             if message2:
+            
                 messages.append(message2.text)
+                
     messages = list(filter(None, messages))
+    
     messages_len = len(messages)
+    
     last_msg = messages[messages_len-1]
+    
     print(last_msg)
     
     ###
