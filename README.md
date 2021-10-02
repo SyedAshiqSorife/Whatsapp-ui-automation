@@ -4,6 +4,7 @@ To run the code please first setup the environments
  change the paths in Locator folder locators.py file
  
 Then go to the project folder in cmd or pycharm IDE then run following commands to test
+* Change the numbers in contacts.xlsx file as your contact numbers
 
 # To full test run 
 python -m unittest
