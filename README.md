@@ -17,15 +17,15 @@ python -m unittest Tests.testcases.WhatsappTest.test_three
 python -m unittest Tests.testcases.WhatsappTest.test_five
 
 # Usage
- **I use Page Object Model for organize the project in a order
- ** use Python Selenium and Chrome webdriver
- ** Use openpyxl package for accessing excel file
- **Use Unittest for testing
- **Use HtmlTestRunner for generate test reports
+ I use Page Object Model for organize the project in a order
+ use Python Selenium and Chrome webdriver
+ Use openpyxl package for accessing excel file
+ Use Unittest for testing
+ Use HtmlTestRunner for generate test reports
 
 # Issues 
  ## Please run again if first time get error. There have some path issues
- ## I could not complete test four because i was not able to access the last msg path,
+ I could not complete test four because i was not able to access the last msg path,
  it changed everytime so i could not get the right result, thats why there is no implement of test four. But i tried
    ###
    messages = list()
@@ -38,7 +38,6 @@ python -m unittest Tests.testcases.WhatsappTest.test_five
             if message2:
                 messages.append(message2.text)
     messages = list(filter(None, messages))
-
     messages_len = len(messages)
     last_msg = messages[messages_len-1]
     print(last_msg)
@@ -46,8 +45,8 @@ python -m unittest Tests.testcases.WhatsappTest.test_five
  In the above code i can access the last message sent by a user but can't get the 'path' or 'aria-level' value
  
 # Difficulties face
-  **In my system python, selenium and pycharm were not installed so i have install and setup it
-  **when i try to run there face some WebGL problem and i solve it
-  **I face problems to identify paths
+  * In my system python, selenium and pycharm were not installed so i have install and setup it
+  * when i try to run there face some WebGL problem and i solve it
+  * I face problems to identify paths
   
 In this project i learned many new things and it will be helpful for me. Thank you
